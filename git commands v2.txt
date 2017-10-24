@@ -1,0 +1,16 @@
+set correct sdkVersion in ShopJoySDKSettings.m
+
+lipo -create sim.a phone.a -output libShopJoySDK.a
+
+Replace libShopJoySDK.a and ShopJoyHeaders.h
+bump version in podspec, also tag in s.source!
+update changelog
+
+
+git commit -am "2.0.5 improved analytics"
+git push origin master
+git tag -a 2.0.3 -m "2.0.3 improved analytics"
+git push origin --tags
+
+pod spec lint
+pod trunk push ShopJoySDK-v2.podspec

@@ -8,6 +8,10 @@ Documentation: https://content.shopjoy.se/sdkv2/ios.html
 Changelog
 =============
 
+2.0.5
+====
+Multithreading related bugfix
+
 2.0.3
 ====
 Improved analytics
